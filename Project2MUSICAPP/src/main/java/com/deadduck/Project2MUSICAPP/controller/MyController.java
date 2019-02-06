@@ -19,9 +19,18 @@ public class MyController {
     public String findUsers(Model model) {
         
         List<User> users = (List<User>) userService.findAll();
-        
         model.addAttribute("users", users);
-        
         return "showUsers";
     }
-}
+    
+    @RequestMapping("/loggedIn")
+    public String findLoggedIn(Model model) {
+        return "loggedIn";
+    }
+    
+    @RequestMapping("/premium")
+    public String findPremium(Model model) {
+        return "premium";
+    }
+    
+	}
