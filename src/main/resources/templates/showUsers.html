@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Users</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    
+    <body>
+
+        <br>
+        <h2>List of users</h2>
+        <br>
+        <table class="blueTable">
+            <tr>
+                <th>userId</th>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>password</th>
+                <th>subscription</th>
+            </tr>
+            
+            <tr th:each="user : ${users}">
+                <td th:text="${user.userid}">Id</td>
+                <td th:text="${user.firstname}">firstname</td>
+                <td th:text="${user.lastname}">lastname</td>
+                <td th:text="${user.email}">email</td>
+                <td th:text="${user.password}">password</td>
+                <td th:text="${user.subscription}">subscription</td>
+
+            </tr>
+        </table>
+
+        <br>
+       <span class="center">
+        <button onclick="location.href = 'http://localhost:8080/'" >Refresh</button>
+        </span>
+        <br>
+    </body>
+</html>
