@@ -16,110 +16,83 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userid;
-    private String firstname;
+	private String firstname;
     private String lastname;
     private String email;
     private String password;
-    private boolean subscription;
+    private Long subscription_id;
 
     public User() { }
+    
 
-public User(Long userid, String firstname, String lastname, String email, String password, boolean subscription) {
+	public User(Long userid, String firstname, String lastname, String email, String password, Long subscription_id) {
 		super();
 		this.userid = userid;
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.email = email;
 		this.password = password;
-		this.subscription = subscription;
+		this.subscription_id = subscription_id;
 	}
 
-public Long getUserid() {
-	return userid;
-}
 
-public void setUserid(Long userid) {
-	this.userid = userid;
-}
+    
+    public Long getUserid() {
+		return userid;
+	}
 
-public String getFirstname() {
-	return firstname;
-}
+	public void setUserid(Long userid) {
+		this.userid = userid;
+	}
 
-public void setFirstname(String firstname) {
-	this.firstname = firstname;
-}
+	public String getFirstname() {
+		return firstname;
+	}
 
-public String getLastname() {
-	return lastname;
-}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
 
-public void setLastname(String lastname) {
-	this.lastname = lastname;
-}
+	public String getLastname() {
+		return lastname;
+	}
 
-public String getEmail() {
-	return email;
-}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
 
-public void setEmail(String email) {
-	this.email = email;
-}
+	public String getEmail() {
+		return email;
+	}
 
-public String getPassword() {
-	return password;
-}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-public void setPassword(String password) {
-	this.password = password;
-}
-public boolean isSubscription() {
-return subscription;
-}
+	public String getPassword() {
+		return password;
+	}
 
-public void setSubscription(boolean subscription) {
-this.subscription = subscription;
-}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-//    @Override
-//    public int hashCode() {
-//        int hash = 7;
-//        hash = 79 * hash + Objects.hashCode(this.id);
-//        hash = 79 * hash + Objects.hashCode(this.name);
-//        hash = 79 * hash + this.population;
-//        return hash;
-//    }
+	public Long getSubscription_id() {
+		return subscription_id;
+	}
 
-  
+	public void setSubscription_id(Long subscription_id) {
+		this.subscription_id = subscription_id;
+	}
 
-
-	@Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final User other = (User) obj;
-        if (this.password != other.password) {
-            return false;
-        }
-        if (!Objects.equals(this.firstname, other.firstname)) {
-            return false;
-        }
-        return Objects.equals(this.userid, other.userid);
-    }
 
 	@Override
 	public String toString() {
 		return "User [userid=" + userid + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
-				+ ", password=" + password + ", subscription=" + subscription + "]";
+				+ ", password=" + password + ", subscription_id=" + subscription_id + "]";
 	}
-    
+
+
 }
 
 

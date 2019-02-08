@@ -36,10 +36,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
+/* harmony import */ var _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./subscribed/subscribed.component */ "./src/app/subscribed/subscribed.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 
 
 
-var routes = [];
+
+
+
+var routes = [
+    {
+        path: '',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+    },
+    {
+        path: 'home',
+        component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+    },
+    {
+        path: 'user',
+        component: _user_user_component__WEBPACK_IMPORTED_MODULE_3__["UserComponent"]
+    },
+    {
+        path: 'subscribed',
+        component: _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_4__["SubscribedComponent"]
+    },
+];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
@@ -74,7 +97,7 @@ module.exports = "center,table{\r\n\r\n    text-align: center;\r\n}\r\n\r\n\r\n\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}! \n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n\n\n\n        <br>\n        <h1>Hello Everyone!</h1>\n        <br>\n        <h3>Weclome to the MUSIC APP</h3>\n        <br>\n        <h3>TODO:Need to make login.</h3><br>\n        <h3>TODO:Make Music Play</h3><br>\n        <h3>TODO:route for subscribed or not</h3>\n        <br><br>\n        \n\n\n<div class=\"row\">\n  <div class=\"col-sm-6 mx-auto\">\n    <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">\n      \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"First group\">\n\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/app.component.html\" routerLinkActive=\"active\">Home</button>\n\n            <div>\n                \n                \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Second group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/user\" routerLinkActive=\"active\">Logged in User</button>\n      <div>\n\n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Third group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/subscribed\" routerLinkActive=\"active\">Subscribed</button>\n        </div>\n      </div>\n  </div>\n</div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n               \n       <br><br>\n        <br>\n        <span class=\"center\">\n        <button type=\"button\" class=\"btn btn-primary\"  onclick=\"location.href = 'http://localhost:4200/'\" >Refresh</button>\n        \n        <br><br>\n\n\n\n\n\n\n<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -90,12 +113,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+
 
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'MusicApp';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].UserNav;
+    };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-root',
@@ -127,6 +155,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _user_user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./user/user.component */ "./src/app/user/user.component.ts");
 /* harmony import */ var _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./subscribed/subscribed.component */ "./src/app/subscribed/subscribed.component.ts");
+/* harmony import */ var _nav_nav_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./nav/nav.component */ "./src/app/nav/nav.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+
+
 
 
 
@@ -143,6 +175,8 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                 _user_user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"],
                 _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_6__["SubscribedComponent"],
+                _nav_nav_component__WEBPACK_IMPORTED_MODULE_7__["NavComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -153,6 +187,132 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}! \n\n</h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n\n\n\n        <br>\n        <h1>Hello Everyone!</h1>\n        <br>\n        <h3>Weclome to the MUSIC APP</h3>\n        <br>\n        <h3>TODO:Need to make login.</h3><br>\n        <h3>TODO:Make Music Play</h3><br>\n        <h3>TODO:route for subscribed or not</h3>\n        <br><br>\n\n\n\n<h2>List of users</h2>\n\n        <table>\n            <tr>\n                <th>userId</th>\n                <th>firstname</th>\n                <th>lastname</th>\n                <th>email</th>\n                <th>password</th>\n                <th>subscription</th>\n            </tr>\n\n            <tr th:each=\"user : ${users}\">\n                <td th:text=\"${user.userid}\">Id</td>\n                <td th:text=\"${user.firstname}\">firstname</td>\n                <td th:text=\"${user.lastname}\">lastname</td>\n                <td th:text=\"${user.email}\">email</td>\n                <td th:text=\"${user.password}\">password</td>\n                <td th:text=\"${user.subscription}\">subscription</td>\n\n            </tr>\n        </table>\n\n\n\n\n\n\n        \n\n\n\n\n<div class=\"row\">\n  <div class=\"col-sm-6 mx-auto\">\n    <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">\n        \n      \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"First group\">\n\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/home\" routerLinkActive=\"active\">Home</button>\n\n            <div>\n                \n                \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Second group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/user\" routerLinkActive=\"active\">Logged in User</button>\n      <div>\n\n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Third group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/subscribed\" routerLinkActive=\"active\">Subscribed</button>\n        </div>\n      </div>\n  </div>\n</div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n               \n       <br><br>\n        <br>\n        <span class=\"center\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/home\" routerLinkActive=\"active\">Refresh</button>\n        \n        <br><br>\n\n\n\n\n"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+
+
+
+// import { userInfo } from 'os';
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+        this.title = 'MusicApp';
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.userNavs = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].UserNav;
+    };
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/nav/nav.component.css":
+/*!***************************************!*\
+  !*** ./src/app/nav/nav.component.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdi9uYXYuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/nav/nav.component.html":
+/*!****************************************!*\
+  !*** ./src/app/nav/nav.component.html ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav>\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item\" *ngFor=\"let item of navItems\">\n    <a class=\"nav-link\" [routerLink]=\"['/', item.link]\"> {{item.title}} </a>\n    </li>\n  </ul>\n</nav>"
+
+/***/ }),
+
+/***/ "./src/app/nav/nav.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/nav/nav.component.ts ***!
+  \**************************************/
+/*! exports provided: NavComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavComponent", function() { return NavComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+var NavComponent = /** @class */ (function () {
+    function NavComponent(router, route) {
+        this.router = router;
+        this.route = route;
+    }
+    NavComponent.prototype.ngOnInit = function () {
+        this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Array)
+    ], NavComponent.prototype, "navItems", void 0);
+    NavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-nav',
+            template: __webpack_require__(/*! ./nav.component.html */ "./src/app/nav/nav.component.html"),
+            styles: [__webpack_require__(/*! ./nav.component.css */ "./src/app/nav/nav.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+    ], NavComponent);
+    return NavComponent;
 }());
 
 
@@ -177,7 +337,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n        <br>\n        <h2>YOU ARE LOGGED IN as a PREMIUM USER!</h2>\n               <h2>Congrats!</h2>\n\n        <br>\n        <h2>TODO : Make log in direct here if user IS a PREMIUM MEMBER.</h2>\n            <br><br>\n        \n       <span class=\"center\">\n        <button onclick=\"location.href = 'http://localhost:4200/'\" >Home</button>\n        </span>\n        <br>"
+module.exports = "\n        <br>\n        <h2>YOU ARE LOGGED IN as a PREMIUM USER!</h2>\n               <h2>Congrats!</h2>\n\n        <br>\n        <h2>TODO : Make log in direct here if user IS a PREMIUM MEMBER.</h2>\n            <br><br>\n        \n       <span class=\"center\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/home\" routerLinkActive=\"active\">Refresh</button>\n        </span>\n        <br>"
 
 /***/ }),
 
@@ -233,7 +393,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<br>\n        <h2>YOU ARE LOGGED IN</h2>\n        <br>\n        <h2>TODO : Make log in direct here if user not a PREMIUM MEMBER.</h2>\n            <br><br>\n        <br>\n                <br>\n       <span class=\"center\">\n        <button onclick=\"location.href = 'http://localhost:8080/'\" >Home</button>\n        </span>\n        <br>\n   \n"
+module.exports = "<br>\n        <h2>YOU ARE LOGGED IN</h2>\n        <br>\n        <h2>TODO : Make log in direct here if user not a PREMIUM MEMBER.</h2>\n            <br><br>\n        <br>\n                <br>\n       <span class=\"center\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/home\" routerLinkActive=\"active\">Refresh</button>\n        </span>\n        <br>\n   \n"
 
 /***/ }),
 
@@ -285,8 +445,8 @@ var environment = {
     production: false,
     UserNav: [
         {
-            title: 'MusicApp',
-            link: 'MusicApp'
+            title: 'Home',
+            link: 'home'
         },
         {
             title: 'User',

@@ -15,12 +15,12 @@ public class MyController {
     @Autowired
     IUserService userService;
 
-    @RequestMapping("/showUsers")
+    @RequestMapping("/home")
     public String findUsers(Model model) {
         
         List<User> users = (List<User>) userService.findAll();
         model.addAttribute("users", users);
-        return "showUsers";
+        return "home";
     }
     
     @RequestMapping("/loggedIn")
