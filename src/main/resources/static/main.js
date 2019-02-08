@@ -63,7 +63,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "center,table{\r\n\r\n    text-align: center;\r\n}\r\n\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJjZW50ZXIsdGFibGV7XHJcblxyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG5cclxuXHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<ul>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/cli\">CLI Documentation</a></h2>\n  </li>\n  <li>\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n  </li>\n</ul>\n\n<router-outlet></router-outlet>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}! \n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n\n\n\n        <br>\n        <h1>Hello Everyone!</h1>\n        <br>\n        <h3>Weclome to the MUSIC APP</h3>\n        <br>\n        <h3>TODO:Need to make login.</h3><br>\n        <h3>TODO:Make Music Play</h3><br>\n        <h3>TODO:route for subscribed or not</h3>\n        <br><br>\n        \n\n\n<div class=\"row\">\n  <div class=\"col-sm-6 mx-auto\">\n    <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">\n      \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"First group\">\n\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/app.component.html\" routerLinkActive=\"active\">Home</button>\n\n            <div>\n                \n                \n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Second group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/user\" routerLinkActive=\"active\">Logged in User</button>\n      <div>\n\n        <div class=\"btn-group mr-2\" role=\"group\" aria-label=\"Third group\">\n            <button type=\"submit\"  class=\"btn btn-primary\" routerLink =\"/subscribed\" routerLinkActive=\"active\">Subscribed</button>\n        </div>\n      </div>\n  </div>\n</div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n               \n       <br><br>\n        <br>\n        <span class=\"center\">\n        <button type=\"button\" class=\"btn btn-primary\"  onclick=\"location.href = 'http://localhost:4200/'\" >Refresh</button>\n        \n        <br><br>\n\n\n\n\n\n\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -142,7 +142,7 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                 _user_user_component__WEBPACK_IMPORTED_MODULE_5__["UserComponent"],
-                _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_6__["SubscribedComponent"]
+                _subscribed_subscribed_component__WEBPACK_IMPORTED_MODULE_6__["SubscribedComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -177,7 +177,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n        <br>\n        <h2>YOU ARE LOGGED IN as a PREMIUM USER!</h2>\n               <h2>Congrats!</h2>\n\n        <br>\n        <h2>TODO : Make log in direct here if user IS a PREMIUM MEMBER.</h2>\n            <br><br>\n        \n       <span class=\"center\">\n        <button onclick=\"location.href = 'http://localhost:8080/'\" >Home</button>\n        </span>\n        <br>"
+module.exports = "\n        <br>\n        <h2>YOU ARE LOGGED IN as a PREMIUM USER!</h2>\n               <h2>Congrats!</h2>\n\n        <br>\n        <h2>TODO : Make log in direct here if user IS a PREMIUM MEMBER.</h2>\n            <br><br>\n        \n       <span class=\"center\">\n        <button onclick=\"location.href = 'http://localhost:4200/'\" >Home</button>\n        </span>\n        <br>"
 
 /***/ }),
 
@@ -281,20 +281,23 @@ var UserComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    UserNav: [
+        {
+            title: 'MusicApp',
+            link: 'MusicApp'
+        },
+        {
+            title: 'User',
+            link: 'user'
+        },
+        {
+            title: 'Subscribed',
+            link: 'subscribed'
+        }
+    ],
 };
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
 
 /***/ }),
